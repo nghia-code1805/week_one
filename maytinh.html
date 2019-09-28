@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<td><input id="nhap"></td>
+<br>
+<div>
+    <input class="btn" type="button" value="(" onclick="bt(value)">
+    <input class="btn" type="button" value=")" onclick="bt(value)">
+    <input class="btn" type="button" value="%" onclick="bt(value)">
+    <input class="btn" type="button" value="AC" onclick="bta(value)">
+    </div>
+<div>
+    <input class="btn" type="button" value="7" onclick="bt(value)">
+    <input class="btn" type="button" value="8" onclick="bt(value)">
+    <input class="btn" type="button" value="9" onclick="bt(value)">
+    <input class="btn" type="button" value="/" onclick="bt(value)">
+   </div>
+<div>
+    <input class="btn" type="button" value="4" onclick="bt(value)">
+    <input class="btn" type="button" value="5" onclick="bt(value)">
+    <input class="btn" type="button" value="6" onclick="bt(value)">
+    <input class="btn" type="button" value="*" onclick="bt(value)">
+</div>
+<div>
+    <input class="btn" type="button" value="1" onclick="bt(value)">
+    <input class="btn" type="button" value="2" onclick="bt(value)">
+    <input class="btn" type="button" value="3" onclick="bt(value)">
+    <input class="btn" type="button" value="-" onclick="bt(value)">
+</div>
+<div>
+    <input class="btn" type="button" value="0" onclick="bt(value)">
+    <input class="btn" type="button" value="." onclick="bt(value)">
+    <input class="btn" type="button" value="=" onclick="bang(value)">
+    <input class="btn" type="button" value="+" onclick="bt(value)">
+</div>
+<script>
+    function bt(value) {
+        document.getElementById("nhap").value +=value;
+    }
+    function bang(value) {
+        document.getElementById("nhap").value = eval(document.getElementById("nhap").value);
+    }
+    function bta() {
+        document.getElementById("nhap").value="";
+    }
+</script>
+</body>
+</html>
+
